@@ -38,6 +38,20 @@
     <p>Digital playbooks written by operators, not bloggers. Every pack is a working system — buy it, run it, ship something real this week.</p>
   </header>
 
+<!-- LEAD_MAGNET:START -->
+  <div style="background:linear-gradient(135deg,#161b22,#1f2937);border:2px solid #58a6ff;border-radius:12px;padding:24px;margin-bottom:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;">
+    <div style="flex:1;min-width:280px;">
+      <span class="badge" style="background:#58a6ff;color:#0d1117;font-weight:700;">FREE LEAD MAGNET &middot; $0 INSTANT DOWNLOAD</span>
+      <h2 style="font-size:1.45rem;margin:6px 0 8px;">The Operator's AI &amp; Recon Starter Vault (Free Sample Pack)</h2>
+      <p style="color:var(--muted);font-size:.95rem;">Get 10 Elite Operator Prompts (Goal-Chain Protocol), the 15-Minute Daily Open/Close Business SOP, and the VALKYRIE Tactical Recon Field Brief &mdash; plus your <strong>20% OFF VIP Code (<code>OPERATOR20</code>)</strong> valid on every pack below.</p>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-size:1.3rem;font-weight:700;color:#66FF99;margin-bottom:8px;">$0 <span style="font-size:.85rem;color:var(--muted);font-weight:400;">(100% Free)</span></div>
+      <a class="btn" href="https://coachcaptain.gumroad.com/l/operator-starter-vault" target="_blank" rel="noopener" style="background:#58a6ff;color:#0d1117;font-weight:700;">Download Free Vault</a>
+    </div>
+  </div>
+<!-- LEAD_MAGNET:END -->
+
   <h3 class="group-title">Flagship Systems</h3>
   <div class="grid">
     <div class="card ">
@@ -236,10 +250,93 @@
     </div>
   </div>
 
+<!-- HIGH_TICKET:START -->
+  <h3 class="group-title">High-Ticket Custom Hardware &amp; Done-For-You AI Systems</h3>
+  <div class="grid" style="margin-bottom:40px;">
+    <div class="card" style="border-color:#00D4FF;">
+      <img src="assets/zenith_titan.png" alt="Alpha Rigs — The Zenith Titan RTX 5080 Custom Liquid-Cooled PC" onerror="this.style.display='none'">
+      <div class="card-body">
+        <span class="badge" style="color:#00D4FF;border-color:#00D4FF;">ALPHA RIGS &middot; FLAGSHIP HARDWARE</span>
+        <h2>THE ZENITH TITAN &mdash; Custom Hardline RTX 5080 Build</h2>
+        <p>Hand-built hardline liquid-cooled powerhouse: MSI RTX 5080 Gaming Trio OC, Ryzen 9 9900X Overclocked, 64GB DDR5-6200, 2TB Gen5 NVMe, 11x Lian Li Infinity fans. Stress-tested with full thermal &amp; benchmark proof packet.</p>
+        <div class="price-row"><span class="price" style="color:#00D4FF;">$6,499</span><a class="btn" href="#lead-capture-form" onclick="selectInquiry('Alpha Rigs — Zenith Titan ($6,499)')" style="background:#00D4FF;color:#0d1117;">Reserve Build Slot</a></div>
+      </div>
+    </div>
+    <div class="card" style="border-color:#66FF99;">
+      <img src="assets/freelance.png" alt="72-Hour Local Business AI Lead-Response & Quote Bot Pilot">
+      <div class="card-body">
+        <span class="badge" style="color:#66FF99;border-color:#66FF99;">DONE-FOR-YOU AI PILOT &middot; 72-HR TURNAROUND</span>
+        <h2>Instant AI Lead-Response &amp; Quote Calculator Pilot</h2>
+        <p>Stop losing 35% of local leads to slow replies. We deploy a custom under-60-second AI lead-response &amp; instant quote bot wired to your exact pricing sheet in 72 hours. Working proof before you pay maintenance.</p>
+        <div class="price-row"><span class="price" style="color:#66FF99;">$497</span><a class="btn" href="#lead-capture-form" onclick="selectInquiry('72-Hr AI Lead-Response Pilot ($497)')" style="background:#66FF99;color:#0d1117;">Book 72-Hr Pilot</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="lead-capture-form" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin-top:48px;">
+    <span class="badge">DIRECT OPERATOR INTAKE &middot; FAST RESPONSE</span>
+    <h2 style="font-size:1.4rem;margin-bottom:8px;">Request a Custom Build, 72-Hr AI Pilot, or Partner Deal</h2>
+    <p style="color:var(--muted);font-size:.95rem;margin-bottom:20px;">Use code <strong><code>OPERATOR20</code></strong> for 20% off any self-serve Gumroad pack above, or submit your project brief below for custom hardware, done-for-you AI automation, or 40%-commission affiliate partnerships.</p>
+    <form onsubmit="return handleLeadSubmit(event)" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;">
+      <input id="lead-name" type="text" required placeholder="Your Name or Handle" style="padding:11px 14px;border-radius:8px;border:1px solid var(--border);background:#0d1117;color:var(--text);">
+      <input id="lead-contact" type="text" required placeholder="Best Email or @Handle" style="padding:11px 14px;border-radius:8px;border:1px solid var(--border);background:#0d1117;color:var(--text);">
+      <select id="lead-interest" style="padding:11px 14px;border-radius:8px;border:1px solid var(--border);background:#0d1117;color:var(--text);">
+        <option value="72-Hr AI Lead-Response Pilot ($497)">72-Hr AI Lead-Response Pilot ($497)</option>
+        <option value="Alpha Rigs — Zenith Titan ($6,499)">Alpha Rigs — Zenith Titan ($6,499)</option>
+        <option value="VALKYRIE Fleet / Enterprise License">VALKYRIE Fleet / Enterprise License</option>
+        <option value="40% Affiliate / Agent Partner Deal">40% Affiliate / Agent Partner Deal</option>
+        <option value="Free Operator Starter Vault ($0)">Free Operator Starter Vault ($0)</option>
+      </select>
+      <input id="lead-notes" type="text" placeholder="Business niche, timeline, or spec notes" style="grid-column:1/-1;padding:11px 14px;border-radius:8px;border:1px solid var(--border);background:#0d1117;color:var(--text);">
+      <div style="grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+        <span id="lead-status" style="color:#66FF99;font-size:.9rem;">Instant 20% off self-serve code: <strong>OPERATOR20</strong></span>
+        <button type="submit" class="btn" style="border:none;cursor:pointer;font-size:1rem;">Lock Priority Slot &amp; Get Starter Vault &rarr;</button>
+      </div>
+    </form>
+  </div>
+
+<!-- CATALOG:START -->
+<!-- CATALOG:END -->
+<!-- HIGH_TICKET:END -->
+
   <footer>Instant download · Lifetime updates · 30-day "ship something real" guarantee on every pack<br>© 2026 AlphaDesk — built by an operator</footer>
 </div>
 <script>
-// All buy links are real Gumroad permalinks synced from the CLI catalog 21 products.
+// Append UTM tracking at click time while keeping raw hrefs intact for funnel watchdog parity.
+document.querySelectorAll('a[href*="coachcaptain.gumroad.com/l/"]').forEach(a => {
+  a.addEventListener('click', () => {
+    try {
+      const u = new URL(a.href);
+      if (!u.searchParams.has('utm_source')) {
+        u.searchParams.set('utm_source', 'alphadesk_storefront');
+        u.searchParams.set('utm_medium', 'web');
+        u.searchParams.set('utm_campaign', 'empire_catalog');
+        a.href = u.toString();
+      }
+    } catch (_) {}
+  });
+});
+function selectInquiry(val) {
+  const sel = document.getElementById('lead-interest');
+  if (sel) sel.value = val;
+}
+function handleLeadSubmit(e) {
+  e.preventDefault();
+  const name = document.getElementById('lead-name').value.trim();
+  const contact = document.getElementById('lead-contact').value.trim();
+  const interest = document.getElementById('lead-interest').value;
+  const notes = document.getElementById('lead-notes').value.trim();
+  const payload = { ts: new Date().toISOString(), name, contact, interest, notes };
+  try {
+    const prev = JSON.parse(localStorage.getItem('alphadesk_leads') || '[]');
+    prev.push(payload);
+    localStorage.setItem('alphadesk_leads', JSON.stringify(prev));
+  } catch (_) {}
+  const st = document.getElementById('lead-status');
+  if (st) st.textContent = 'Request logged! Redirecting you to the Free Operator Starter Vault to lock your email...';
+  window.open('https://coachcaptain.gumroad.com/l/operator-starter-vault?utm_source=storefront_lead_form&utm_medium=web&utm_campaign=' + encodeURIComponent(interest), '_blank');
+  return false;
+}
 </script>
 </body>
 </html>
